@@ -1,0 +1,41 @@
+<div class="row">
+  <div class="col-md-12 col-sm-12">
+    <pre class="page-header"> Employee Portal View</pre>
+  </div>
+</div>
+
+<div class="row">&nbsp;</div>
+<div class="row">&nbsp;</div>
+<div class="row">&nbsp;</div>
+
+<div class="row">
+  <div class="col-md-12 col-sm-12">
+    <ng-template #noEmp>
+      <div class="no-data-message">
+        Employees not Available!
+      </div>
+    </ng-template>
+    <table *ngIf="employees && employees.length>0;else noEmp" class="table">
+      <thead class="table-header">
+        <tr>
+          <th>ID</th>
+          <th>FIRST NAME </th>
+          <th>LAST NAME </th>
+          <th>GENDER</th>
+          <th>DATE OF BIRTH</th>
+          <th>DEPARTMENT</th>
+        </tr>
+      </thead>
+      <tbody class="table-data">
+        <tr *ngFor="let emp of employees">
+          <td>{{emp.id}}</td>
+          <td>{{emp.firstName}}</td>
+          <td> {{emp.lastName}}</td>
+          <td>{{emp.gender}}</td>
+          <td>{{emp.dateOfBirth}}</td>
+          <td>{{emp.department}}</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>

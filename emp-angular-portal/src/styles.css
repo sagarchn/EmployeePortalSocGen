@@ -1,0 +1,15 @@
+/* You can add global styles to this file, and also import other style files */
+.page-header{
+text-align: center;
+font-weight: bold;
+font-size: 25px;
+color: grey;
+}
+
+
+.alert {
+    top: 125px;
+    align-items: center;
+    margin-right: 520px;
+    margin-left: 120px;
+}

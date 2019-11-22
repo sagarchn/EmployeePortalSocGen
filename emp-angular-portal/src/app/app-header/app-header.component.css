@@ -1,0 +1,8 @@
+nav.navbar.navbar-expand-lg.navbar-light.bg-light {
+    background-color: lightgrey !important;
+    color: #00303f;
+}
+
+li.nav-item.active {
+    background: darkgrey;
+}
